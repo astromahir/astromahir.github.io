@@ -2654,8 +2654,25 @@ input, select, textarea {
         ),
         url("../../images/M44-Star-Cluster.png");
 
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+
+/* Make all sections translucent */
+#main > section {
+    background-image: none !important;
+    background-color: rgba(10, 15, 25, 0.75) !important;
+    color: #ffffff;
+}
+
+/* Keep the Home section slightly darker */
+#main > section.one {
+    background-color: rgba(0, 0, 0, 0.45) !important;
+}
+
+/* Make section headings readable */
+#main > section h2 {
+    color: #ffffff;
 }
 
