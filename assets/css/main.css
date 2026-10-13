@@ -2631,3 +2631,20 @@ input, select, textarea {
 				}
 
 	}
+
+
+/* Home Background: M44 Star Cluster */
+
+#top {
+    background-image:
+        linear-gradient(
+            rgba(0, 0, 0, 0.45),
+            rgba(0, 0, 0, 0.45)
+        ),
+        url("../../images/M44-Star-Cluster.png");
+
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
