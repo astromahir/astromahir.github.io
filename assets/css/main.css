@@ -2646,33 +2646,35 @@ input, select, textarea {
 
 /* Home Background: M44 Star Cluster */
 
-#top {
-    background-image:
-        linear-gradient(
-            rgba(0, 0, 0, 0.45),
-            rgba(0, 0, 0, 0.45)
-        ),
-        url("../../images/M44-Star-Cluster.png");
 
-	background-position: center center;
-	background-repeat: no-repeat;
-	background-attachment: fixed;
+/* Fixed M44 background across the website */
+
+#main {
+    background-image: url("../../images/M44-Star-Cluster.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-color: #101820;
 }
 
-/* Make all sections translucent */
+/* Transparent sections reveal the fixed background */
+
 #main > section {
-    background-image: none !important;
-    background-color: rgba(10, 15, 25, 0.75) !important;
+    background: rgba(10, 15, 25, 0.55) !important;
     color: #ffffff;
 }
 
-/* Keep the Home section slightly darker */
+/* Slightly darker Home section */
+
 #main > section.one {
-    background-color: rgba(0, 0, 0, 0.45) !important;
+    background: rgba(0, 0, 0, 0.45) !important;
 }
 
-/* Make section headings readable */
-#main > section h2 {
+/* Keep text readable */
+
+#main > section h2,
+#main > section h3,
+#main > section strong {
     color: #ffffff;
 }
-
