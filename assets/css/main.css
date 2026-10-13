@@ -2246,10 +2246,21 @@ input, select, textarea {
 				background-position: center center;
 			}
 
+
 			#main > section.one {
-				background-color: #81918E;
-				background-image: url("../../images/banner.jpg");
+				background-color: #101820;
+				background-image:
+					linear-gradient(
+						rgba(0, 0, 0, 0.45),
+						rgba(0, 0, 0, 0.45)
+					),
+					url("../../images/M44-Star-Cluster.jpg");
+			
+				background-size: cover;
+				background-position: center center;
+				background-repeat: no-repeat;
 			}
+			
 
 			#main > section.two {
 				background-color: #f5fafa;
