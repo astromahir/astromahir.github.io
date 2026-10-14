@@ -83,12 +83,12 @@ input, select, textarea {
 	}
 
 	body {
-		background: #fff;
+		background: #ffffff;
 		font-family: 'Source Sans Pro', sans-serif;
 		font-size: 19pt;
 		font-weight: 300;
 		line-height: 1.75em;
-		color: #888;
+		color: #ffffff;
 	}
 
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
@@ -107,12 +107,12 @@ input, select, textarea {
 		font-size: 19pt;
 		font-weight: 300;
 		line-height: 1.75em;
-		color: #888;
+		color: #ffffff;
 	}
 
 	h1, h2, h3, h4, h5, h6 {
 		font-weight: 300;
-		color: #666;
+		color: #ffffff;
 		line-height: 1.5em;
 	}
 
@@ -122,7 +122,7 @@ input, select, textarea {
 	}
 
 		h1 a strong, h2 a strong, h3 a strong, h4 a strong, h5 a strong, h6 a strong {
-			color: #333;
+			color: #ffffff;
 		}
 
 	h2 {
@@ -131,11 +131,11 @@ input, select, textarea {
 	}
 
 		h2.alt {
-			color: #888;
+			color: #ffffff;
 		}
 
 			h2.alt strong {
-				color: #666;
+				color: #ffffff;
 			}
 
 	h3 {
@@ -156,7 +156,7 @@ input, select, textarea {
 
 	strong, b {
 		font-weight: 300;
-		color: #666;
+		color: #ffffff;
 	}
 
 	em, i {
@@ -1912,7 +1912,7 @@ input, select, textarea {
 	}
 
 		table tbody tr:nth-child(2n+2) {
-			background: #f4f4f4;
+			background: #ffffff;
 		}
 
 		table td {
@@ -2177,7 +2177,7 @@ input, select, textarea {
 	#footer {
 		margin-left: 375px;
 		text-align: center;
-		background-color: #dce3e2;
+		background-color: #000000;
 		padding: 3em 0 4em 0;
 		box-shadow: inset 0 1px 0 0 rgba(0, 0, 0, 0.05), inset 0 0.1em 0.1em 0 rgba(0, 0, 0, 0.025);
 		font-size: 0.8em;
@@ -2218,8 +2218,7 @@ input, select, textarea {
 		}
 
 			#main > section.dark {
-				color: #ddd;
-				color: rgba(255, 255, 255, 0.75);
+				color: #ffffff;
 			}
 
 				#main > section.dark h2, #main > section.dark h3, #main > section.dark h4, #main > section.dark h5, #main > section.dark h6 {
@@ -2227,7 +2226,7 @@ input, select, textarea {
 				}
 
 				#main > section.dark strong {
-					color: #fff;
+					color: #ffdddd;
 					border-color: inherit;
 				}
 
@@ -2661,14 +2660,14 @@ input, select, textarea {
 /* Transparent sections reveal the fixed background */
 
 #main > section {
-    background: rgba(10, 15, 25, 0.55) !important;
+    background: rgba(0, 0, 0, 0.65) !important;
     color: #ffffff;
 }
 
 /* Slightly darker Home section */
 
 #main > section.one {
-    background: rgba(0, 0, 0, 0.45) !important;
+    background: rgba(0, 0, 0, 0.65) !important;
 }
 
 /* Keep text readable */
@@ -2677,4 +2676,38 @@ input, select, textarea {
 #main > section h3,
 #main > section strong {
     color: #ffffff;
+}
+
+.site-credits {
+    font-size: 0.7em;
+    line-height: 1.5;
+    text-align: center;
+    margin-top: 2em;
+}
+
+
+/* Home Profile Picture */
+
+#top .home-photo {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    object-position: center top;
+    border-radius: 50%;
+
+    border: 3px solid rgba(255, 255, 255, 0.85);
+
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+
+    display: block;
+    margin: 0 auto 30px auto;
+}
+
+/* Smaller photo on mobile */
+
+@media screen and (max-width: 736px) {
+    #top .home-photo {
+        width: 150px;
+        height: 150px;
+    }
 }
