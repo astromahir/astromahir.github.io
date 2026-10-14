@@ -2711,3 +2711,8 @@ input, select, textarea {
         height: 150px;
     }
 }
+
+#main > section#top.cover {
+    padding-top: 2em;
+    padding-bottom: 4em;
+}
