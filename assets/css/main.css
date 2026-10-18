@@ -2716,3 +2716,49 @@ input, select, textarea {
     padding-top: 2em;
     padding-bottom: 4em;
 }
+
+
+
+/* Sidebar profile: image left, text right */
+
+#logo {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    text-align: left;
+}
+
+#logo .image.avatar48 {
+    position: static;
+    display: block;
+    flex: 0 0 70px;
+    width: 70px;
+    height: 90px;
+    margin: 0;
+}
+
+#logo .image.avatar48 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 5px;
+}
+
+#logo .logo-text {
+    flex: 1;
+    min-width: 0;
+}
+
+#logo .logo-text h1 {
+    font-size: 0.95em;
+    line-height: 1.2;
+    margin-bottom: 8px;
+}
+
+#logo .logo-text p {
+    font-size: 0.55em;
+    line-height: 1.4;
+    margin: 4px 0;
+}
+
