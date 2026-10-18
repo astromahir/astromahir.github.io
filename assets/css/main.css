@@ -2730,23 +2730,28 @@ input, select, textarea {
     text-align: left;
 }
 
+
 /* Pillars of Creation Image */
 #logo .image.avatar48 {
     position: static;
     display: block;
-    flex: 0 0 73px;
+    flex: 0 0 74px;
     width: 74px;
-    height: 94px;
+    height: 93px;
     margin: 0;
+    background: transparent;
+    border-radius: 4px;
+    overflow: hidden;
 }
 
 #logo .image.avatar48 img {
-    width: 104%;
-    height: 102%;
+    display: block;
+    width: 100%;
+    height: 100%;
     object-fit: cover;
     object-position: center;
-    border-radius: 4px;
 }
+
 
 /* Name and University */
 #logo .logo-text {
