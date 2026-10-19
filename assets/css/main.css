@@ -2774,3 +2774,28 @@ input, select, textarea {
 }
 
 
+
+/* Sky Plot Figure */
+
+.skyplot-figure {
+    max-width: 1000px;
+    margin: 2em auto;
+    padding: 0;
+    background: transparent;
+}
+
+.skyplot-figure img {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+}
+
+.skyplot-figure figcaption {
+    background: transparent;
+    color: white;
+    font-size: 0.65em;
+    line-height: 1.4;
+    margin-top: 10px;
+}
