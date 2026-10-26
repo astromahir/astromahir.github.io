@@ -2799,3 +2799,10 @@ input, select, textarea {
     line-height: 1.4;
     margin-top: 10px;
 }
+
+
+/* Left-align body paragraphs throughout the website */
+
+#main > section p {
+    text-align: left;
+}
