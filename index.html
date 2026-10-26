@@ -41,7 +41,6 @@
 							<ul>
 								<li><a href="#top" id="top-link"><span class="icon solid fa-home">Home</span></a></li>
 								<li><a href="#portfolio" id="research-link"><span class="icon solid fa-star">Research</span></a></li>
-								<li><a href="#publications" id="publications-link"><span class="icon solid fa-book-open">Publications</span></a></li>
 								<li><a href="#software" id="software-link"><span class="icon solid fa-code">Software</span></a></li>
 								<li><a href="#teaching" id="teaching-link"><span class="icon solid fa-chalkboard-teacher">Teaching & Outreach</span></a></li>
 								<li><a href="#about" id="aboutme-link"><span class="icon solid fa-user">About Me</span></a></li>
@@ -202,15 +201,111 @@
 
 					</section>
 
-				<!-- Presentations and Publications -->
-					<section id="publications" class="three">
+									<!-- Portfolio -->
+					<section id="portfolio" class="two">
 						<div class="container">
 
 							<header>
-								<h2>Presentations</h2>
+								<h3>Research</h3>
 							</header>
 
-							<p>I have a list somewhere. I need to find it.</p>
+							<header>
+								<h2>The Ages of the Nearest Open Clusters</h2>
+							</header>
+
+							<p>
+								Open clusters are important benchmarks for stellar evolution because they contain stars 
+								of different masses that formed at approximately the same time and share several common
+								stellar parameters, such as composition. However, their absolute ages remain uncertain 
+								by approximately 20% in many cases.
+							</p>
+
+							<p>
+								This project aims to improve these age estimates using red giants observed with the 
+								CHARA Array. Interferometric measurements can directly constrain the angular diameters
+								of red giants, which, when combined with distances and bolometric fluxes, allow fundamental
+								stellar properties such as radius, luminosity, and effective temperatures to be determined.
+								Comparing these properties with stellar evolutionary models allows us to place tighter 
+								constraints on cluster ages.
+							</p>
+
+							<p>
+								Our initial benchmark sample includes Ruprecht 147, Praesepe, Coma Berenices, Alpha Persei,
+								the Hyades, and the Ursa Major Moving Group.
+							</p>
+
+							<header>
+								<h2>The ROC Catalog</h2>
+							</header>
+
+							<p>
+								The Red giants in Open Clusters (ROC) catalog aims to identify red giants suitable
+								for precise age determinations in nearby stellar populations. Using the Montreal Open Clusters
+								and Associations (MOCA) database, we are constructing two samples: ROC350 (covering clusters
+								within 350 pc; encompassing
+								many well-studied systems while remaining largely accessible to interferometric measurements)
+								and ROC1000 (extending the sample to 1,000 pc; a volume within which many RGs remain 
+								sufficiently bright for asteroseismic characterization with TESS.)
+							</p>
+
+
+
+
+							<!-- Sky Plot Figure -->
+							<figure class="skyplot-figure">
+								<a href="images/skyplot.pdf" target="_blank">
+									<img
+										src="images/skyplot.png"
+										alt="Sky distribution of nearby open clusters"
+									>
+								</a>
+							</figure>
+
+							
+							
+							<p>
+								The figure above showcases an aitoff projection of red giants in open clusters 
+								out to 350 pc (red points; preliminary) and 1000 pc (blue points; preliminary). 
+								Additionally, two prominent and well-stuided open clusters have also been marked: 
+								Ruprecht 147 (the oldest open cluster out to 350 pc) and M67 (the oldest open cluster 
+								out to 1000 pc). 
+								These catalogs will help identify promising interferometric targets and establish new
+								benchmarks for testing stellar evolutionary models, with the goal of achieving cluster
+								age uncertainties below 10%.
+							</p>
+
+
+					</section>
+
+				<!-- Software -->
+				<section id="software" class="two">
+					<div class="container">
+
+						<header>
+							<h3>Software</h3>
+						</header>
+
+						<header>
+							<h2>CHARA Array's Thrifty Calibrator Hunter — CATCH</h2>
+						</header>
+
+						<p>
+							The CHARA Array's Thrifty Calibrator Hunter (CATCH)
+							is a Python-based software tool that Akshat Chaturvedi 
+							and I developed to simplify
+							the process of identifying suitable calibrator stars
+							for interferometric observations with the CHARA Array.
+
+							Learn more about CATCH  <a href="https://github.com/akshat-chaturvedi/CATCH"
+							target="_blank" rel="noopener noreferrer">
+							 <strong>here!</strong>
+						</p>
+
+
+				</section>
+
+
+
 
 						</div>
 					</section>
