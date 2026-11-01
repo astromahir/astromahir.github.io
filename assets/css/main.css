@@ -1,5 +1,5 @@
 @import url("fontawesome-all.min.css");
-@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,400,600");
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,400,600,700");
 
 /*
 	Prologue by HTML5 UP
@@ -155,7 +155,7 @@ input, select, textarea {
 	}
 
 	strong, b {
-		font-weight: 300;
+		font-weight: 700;
 		color: #ffffff;
 	}
 
@@ -1757,7 +1757,7 @@ input, select, textarea {
 		.image.avatar48 {
 			width: 48px;
 			height: 48px;
-			background: #f00;
+			background: transparent;
 		}
 
 			.image.avatar48 img {
@@ -1985,7 +1985,7 @@ input, select, textarea {
 	}
 
 		.item header {
-			background: #fff;
+			background: rgba(0, 0, 0, 0.3);
 			margin: 0;
 			padding: 1em 0 1em 0;
 			font-size: 0.8em;
@@ -2226,7 +2226,7 @@ input, select, textarea {
 				}
 
 				#main > section.dark strong {
-					color: #ffdddd;
+					color: #ffffff;
 					border-color: inherit;
 				}
 
@@ -2736,7 +2736,7 @@ input, select, textarea {
     position: static;
     display: block;
     flex: 0 0 74px;
-    width: 70px;
+    width: 74px;
     height: 93px;
     margin: 0;
     background: transparent;
@@ -2764,7 +2764,7 @@ input, select, textarea {
     font-size: 1.05em;
     line-height: 1.2;
     margin: 0 0 8px 0;
-    white-space: nowrap;
+    white-space: normal;
 }
 
 #logo .logo-text p {
@@ -2805,4 +2805,73 @@ input, select, textarea {
 
 #main > section p {
     text-align: left;
+    line-height: 1.7;
+}
+
+/* Readable heading and bold text on the dark website theme */
+#main > section strong,
+#main > section b {
+    font-weight: 700;
+    color: #ffffff;
+}
+
+#main > section h4,
+#main > section h5,
+#main > section h6 {
+    color: #ffffff;
+}
+
+/* Keep footer credits centered even when site paragraphs are left-aligned */
+#main > section .site-credits,
+#main > section .site-credits p {
+    text-align: center;
+}
+
+/* Teaching and Outreach subsections */
+#teaching .outreach-group {
+    margin-top: 2.25em;
+    text-align: left;
+}
+
+#teaching .outreach-group h3 {
+    text-align: left;
+    font-size: 1.25em;
+    font-weight: 600;
+    margin-bottom: 0.75em;
+}
+
+#teaching .outreach-group h4 {
+    text-align: left;
+    font-size: 1em;
+    font-weight: 600;
+    margin: 1.5em 0 0.5em;
+}
+
+/* Keep the sidebar profile readable in the template's narrow desktop layout */
+@media screen and (min-width: 961px) and (max-width: 1320px) {
+    #logo {
+        margin: 1.25em 0.65em;
+        gap: 8px;
+    }
+
+    #logo .image.avatar48 {
+        flex: 0 0 58px;
+        width: 58px;
+        height: 75px;
+    }
+
+    #logo .logo-text h1 {
+        font-size: 0.85em;
+    }
+
+    #logo .logo-text p {
+        font-size: 0.56em;
+    }
+}
+
+/* Mobile Safari doesn't consistently support fixed backgrounds */
+@media screen and (max-width: 736px) {
+    #main {
+        background-attachment: scroll;
+    }
 }
